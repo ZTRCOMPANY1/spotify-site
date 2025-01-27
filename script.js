@@ -33,7 +33,7 @@ document.getElementById("login-form")?.addEventListener("submit", function(event
     const storedPassword = localStorage.getItem("password");
 
     if (username === storedUsername && password === storedPassword) {
-        window.location.href = "profile.html";
+        window.location.href = "music.html";
     } else {
         alert("Usuário ou senha incorretos.");
     }
