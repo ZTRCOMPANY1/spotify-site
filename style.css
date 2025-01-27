@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: #1DB954;
+}
+
+h3 {
+    color: #ccc;
+}
+
+.music-container {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.category-item {
+    margin: 10px;
+    width: 250px;
+    height: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.category-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.music-list, #highlighted-music-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.music-item {
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.music-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #1DB954;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    display: center;
+    margin-top: 10px;
+    width: 30%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 220px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    margin: 20px;
+    text-align: center;
+}
+
+.update-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-img {
+    width: 260px;  /* Tamanho das imagens */
+    height: 210px;
+    margin-right: 20px; /* Espaçamento entre as imagens */
+    border-radius: 5%; /* Imagens redondas */
+}
+
+
+ul li span {
+    display: block;
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 10px; /* Espaçamento entre a imagem e o título */
+}
+
+
+
+/* Estilo para o link de nome de usuário */
+a {
+    text-decoration: none;
+    color: #1DB954;
+    font-weight: bold;
+}
+
+.input{
+    color:#ff0000
+}
