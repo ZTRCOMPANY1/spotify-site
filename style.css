@@ -6,7 +6,7 @@ body {
 }
 
 h2 {
-    color: #1DB954;
+    color: #ff0000;
 }
 
 h3 {
@@ -17,6 +17,16 @@ h3 {
     padding: 20px;
     margin-top: 50px;
 }
+
+.gravadoras-container {
+    display: flex; /* Alinha as divs na horizontal */
+    gap: 10px; /* Espaço entre as divs */
+}
+.gravadora, .trinta {
+    width: 200px;
+    height: 200px;
+}
+
 
 .categories {
     display: flex;
@@ -37,20 +47,127 @@ h3 {
 }
 
 .category-item img {
-    width: 100%;
-    height: 200px;
+    width: 247px;
+    height: 300px;
     object-fit: cover;
 }
 
 .category-item p {
     position: absolute;
     bottom: 10px;
-    left: 10px;
-    color: white;
+    left: 20px;
+    color: rgb(255, 0, 0);
     font-weight: bold;
     font-size: 18px;
     margin: 0;
 }
+
+/*gravadora*/
+.gravadora {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.gravadora-item {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 900px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.gravadora-item img {
+    width: 247px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.gravadora-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+/*trinta*/
+.trinta {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.trinta-item {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 900px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.trinta-item img {
+    width: 247px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.trinta-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+/*trinta2*/
+.trinta2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.trinta2-item {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 900px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.trinta2-item img {
+    width: 247px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.trinta2-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
 
 .music-list, #highlighted-music-list {
     display: flex;
@@ -69,10 +186,35 @@ h3 {
     border-radius: 10px;
 }
 
+
+
+/*trinta*/
+
+.trinta-list, #highlighted-trinta-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trinta-item {
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.trinta-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
 audio {
     width: 100%;
     margin-top: 10px;
 }
+
 
 button {
     background-color: #1DB954;
@@ -126,7 +268,7 @@ ul li span {
 /* Estilo para o link de nome de usuário */
 a {
     text-decoration: none;
-    color: #1DB954;
+    color: #ff0000;
     font-weight: bold;
 }
 
