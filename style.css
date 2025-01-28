@@ -18,13 +18,30 @@ h3 {
     margin-top: 50px;
 }
 
+.teto-container {
+    padding: 20px;
+    margin-top: 50px;
+}
+
 .gravadoras-container {
     display: flex; /* Alinha as divs na horizontal */
     gap: 10px; /* Espaço entre as divs */
 }
+
+.teto-container {
+    display: flex; /* Alinha as divs na horizontal */
+    gap: 10px; /* Espaço entre as divs */
+}
+
 .gravadora, .trinta {
     width: 200px;
     height: 200px;
+}
+
+/*teto no 30o=praum*/
+.teto-container {
+    display: flex; /* Alinha as divs na horizontal */
+    gap: 10px; /* Espaço entre as divs */
 }
 
 
@@ -207,6 +224,66 @@ h3 {
     border-radius: 10px;
 }
 
+
+/*aba teto*/
+
+
+/*trinta*/
+/*1*/
+.teto2-list, #highlighted-teto2-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teto2-item {
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.teto2-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+/*2*/
+
+/*trinta2*/
+.teto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.teto-item {
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 900px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.teto-item img {
+    width: 247px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.teto-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
 
 
 

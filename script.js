@@ -198,39 +198,4 @@ if (document.getElementById("gravadora")) {
 /* ------------------------------------------------------------ */
 
 /*na pagina trinta.html gravadora 30praum */
-
-// Músicas da 30praum
-const trintaList = [
-    { title: "musica1", category: "trinta", img: "assets/categorias/megafunk/musicas/mega_funk_digoidg/megafunkdigoidg.png", file: "assets/categorias/megafunk/musicas/mega_funk_digoidg/megafunkdigoidg.mp3" },
-    { title: "Música 2", category: "trinta", img: "assets/music2.jpg", file: "assets/music2.mp3" },
-    { title: "Música 3", category: "trinta", img: "gravadoras/trinta/categoria.png", file: "" },
-];
-
-
-function loadMusicByCategory(category) {
-    const musicListElement = document.getElementById("trinta-list");
-    musicListElement.innerHTML = ""; // Limpar a lista antes de adicionar novas músicas
-
-    const filteredMusic = trintaList.filter(music => music.category === category);
-    filteredMusic.forEach(music => {
-        const musicItem = document.createElement("div");
-        musicItem.classList.add("music-item");
-        musicItem.innerHTML = `
-            <img src="${music.img}" alt="${music.title}" class="trinta-img">
-            <p>${music.title}</p>
-            <audio controls>
-                <source src="${music.file}" type="audio/mp3">
-                Seu navegador não suporta o elemento de áudio.
-            </audio>
-           
-        `;
-        musicListElement.appendChild(musicItem);
-    });
-}
-// Redirecionamento da categoria para a página de músicas dessa categoria
-const trintaParam = new URLSearchParams(window.location.search).get("trinta");
-if (trintaParam) {
-    loadMusicByCategory(trintaParam);
-}
-
 /* ------------------------------------------------------------ */
